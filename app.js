@@ -89,3 +89,62 @@ renderCart = function () {
 };
 
 renderCart();
+
+/* CORRECCION FINAL DE WHATSAPP - TIENDANOVA */
+openTiendaNovaWhatsApp = function (mensaje) {
+  const numero = '50432283197';
+  const enlace = 'https://wa.me/' + numero +
+    '?text=' + encodeURIComponent(mensaje);
+  window.location.assign(enlace);
+};
+
+document.addEventListener('click', function (evento) {
+  const productoBoton = evento.target.closest('[data-wa-product]');
+  const pedidoBoton = evento.target.closest('#checkout');
+
+  if (!productoBoton && !pedidoBoton) return;
+
+  evento.preventDefault();
+  evento.stopImmediatePropagation();
+
+  if (productoBoton) {
+    const producto = products.find(
+      p => p.id === Number(productoBoton.dataset.waProduct)
+    );
+    if (!producto) return;
+
+    const mensaje =
+      'Hola, deseo consultar este producto de TiendaNova:\n' +
+      producto.name + '\nPrecio: ' + money(producto.price);
+
+    openTiendaNovaWhatsApp(mensaje);
+    return;
+  }
+
+  const pedido = deliveryTotals();
+
+  if (!pedido.entries.length) {
+    alert('Primero agrega productos al carrito.');
+    return;
+  }
+  if (!pedido.dept || !pedido.city) {
+    alert('Selecciona departamento y escribe municipio.');
+    return;
+  }
+  if (pedido.grand === null) {
+    alert('No se pudo calcular el costo del envío.');
+    return;
+  }
+
+  openTiendaNovaWhatsApp(orderText());
+}, true);
+
+const actualizarBotonWhatsApp = renderCart;
+renderCart = function () {
+  const resultado = actualizarBotonWhatsApp();
+  document.getElementById('checkout').disabled =
+    deliveryTotals().entries.length === 0;
+  return resultado;
+};
+
+renderCart();
