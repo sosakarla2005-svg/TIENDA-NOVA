@@ -49,7 +49,7 @@ if(previewDept){
 
 // WhatsApp: en este prototipo no se ha autorizado un número comercial.
 // Con número configurado abre el chat directo; sin número usa la pantalla de compartir.
-const TIENDANOVA_WHATSAPP_NUMBER = ''; // Configurar únicamente un número comercial autorizado: 504XXXXXXXX
+const TIENDANOVA_WHATSAPP_NUMBER = '50432283197'; // Configurar únicamente un número comercial autorizado: 504XXXXXXXX
 function openTiendaNovaWhatsApp(message) {
   const number = TIENDANOVA_WHATSAPP_NUMBER.replace(/\D/g, '');
   const base = number ? 'https://api.whatsapp.com/send?phone='+number+'&text='
