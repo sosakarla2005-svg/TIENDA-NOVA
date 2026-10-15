@@ -57,3 +57,24 @@ function openTiendaNovaWhatsApp(message) {
   // Navegación directa desde el clic: evita bloqueadores de ventanas emergentes.
   window.location.href = base + encodeURIComponent(message);
 }
+document.getElementById('checkout').disabled = false;
+document.getElementById('checkout').onclick = function () {
+  const pedido = deliveryTotals();
+
+  if (!pedido.entries.length) {
+    alert('Agrega productos al carrito.');
+    return;
+  }
+  if (!pedido.dept) {
+    alert('Selecciona el departamento de entrega.');
+    return;
+  }
+  if (!pedido.city) {
+    alert('Escribe el municipio de entrega.');
+    return;
+  }
+
+  openTiendaNovaWhatsApp(orderText());
+};
+
+renderCart();
