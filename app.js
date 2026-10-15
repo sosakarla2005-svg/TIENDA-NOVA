@@ -77,4 +77,15 @@ document.getElementById('checkout').onclick = function () {
   openTiendaNovaWhatsApp(orderText());
 };
 
+const renderCartActualizado = renderCart;
+
+renderCart = function () {
+  const resultado = renderCartActualizado();
+  const hayProductos = deliveryTotals().entries.length > 0;
+
+  document.getElementById('checkout').disabled = !hayProductos;
+
+  return resultado;
+};
+
 renderCart();
