@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Bolso Klip Xtreme Capri KLB-461GR",
+    "category": "Accesorios",
+    "price": 1099,
+    "stock": 10,
+    "image": "imagenes/Bolso_Klip_Capri.png",
+    "description": "Bolso gris/blanco para laptop de 15.6 pulgadas."
+  },
+  {
+    "id": 2,
+    "name": "Cable HDMI plano Xtech XTC-406",
+    "category": "Accesorios",
+    "price": 279,
+    "stock": 15,
+    "image": "imagenes/Cable_HDMI_Xtech.png",
+    "description": "Full HD, 1.8 metros, diseño plano."
+  },
+  {
+    "id": 3,
+    "name": "Cable Klip Xtreme KAC-250 USB-C",
+    "category": "Accesorios",
+    "price": 249,
+    "stock": 10,
+    "image": "imagenes/Cable_USB_C_Klip.png",
+    "description": "USB-C a USB-C, 60 W, trenzado, 1.8 metros."
+  },
+  {
+    "id": 4,
+    "name": "Laptop ASUS Vivobook 14",
+    "category": "Laptops",
+    "price": 22999,
+    "stock": 6,
+    "image": "imagenes/ASUS_Vivobook_14.png",
+    "description": "Intel Core 5 120U, 16 GB RAM, SSD 512 GB, Windows 11."
+  },
+  {
+    "id": 5,
+    "name": "Laptop Dell Pro 14",
+    "category": "Laptops",
+    "price": 38899,
+    "stock": 3,
+    "image": "imagenes/Laptop_Dell_Pro_14.png",
+    "description": "Core Ultra 5 235U, 16 GB RAM, SSD 512 GB, Windows 11 Pro."
+  },
+  {
+    "id": 6,
+    "name": "Laptop Dell Pro 14 Plus PB14250",
+    "category": "Laptops",
+    "price": 55699,
+    "stock": 3,
+    "image": "imagenes/Laptop_Dell_Pro_14_Plus.png",
+    "description": "Core Ultra 7 266V vPro, 16 GB RAM, SSD 512 GB."
+  },
+  {
+    "id": 7,
+    "name": "Laptop HP Victus 15-fb3020la",
+    "category": "Laptops",
+    "price": 52099,
+    "stock": 5,
+    "image": "imagenes/Laptop_HP_Victus_15.png",
+    "description": "Ryzen 7 7445HS, RTX 3050 6 GB, 16 GB RAM, SSD 512 GB, 144 Hz."
+  },
+  {
+    "id": 8,
+    "name": "Access Point Cambium XV2-2X",
+    "category": "Redes",
+    "price": 3399,
+    "stock": 10,
+    "image": "imagenes/Access_Point_Cambium.png",
+    "description": "Wi-Fi 6, 2×2, interior, conexión 2.5 GbE."
+  },
+  {
+    "id": 9,
+    "name": "Teléfono IP Grandstream GRP2634",
+    "category": "Redes",
+    "price": 3199,
+    "stock": 20,
+    "image": "imagenes/Telefono_Grandstream.png",
+    "description": "8 líneas, 12 cuentas SIP, Wi-Fi 6 y Bluetooth."
+  },
+  {
+    "id": 10,
+    "name": "Tablet Lenovo Idea Tab TB336FU",
+    "category": "Tablets",
+    "price": 9099,
+    "stock": 10,
+    "image": "imagenes/Tablet_Lenovo_Idea_Tab.png",
+    "description": "11 pulgadas 2.5K, 8 GB RAM, 128 GB, lápiz y funda."
+  },
+  {
+    "id": 11,
+    "name": "Cargador Targus APA107BT",
+    "category": "Accesorios",
+    "price": 1399,
+    "stock": 10,
+    "image": "imagenes/Cargador_Targus_65W.png",
+    "description": "65 W, USB-C, Power Delivery 3.0."
+  },
+  {
+    "id": 12,
+    "name": "Mochila Klip Xtreme XpandPack KNB-650BK",
+    "category": "Accesorios",
+    "price": 1199,
+    "stock": 30,
+    "image": "imagenes/Mochila_Klip_XpandPack.png",
+    "description": "Para laptop 15.6 pulgadas, expandible, diseño antirrobo."
+  },
+  {
+    "id": 13,
+    "name": "Audífonos JBL Tune 520C",
+    "category": "Audio",
+    "price": 1099,
+    "stock": 10,
+    "image": "imagenes/Audifonos_JBL_Tune_520C.png",
+    "description": "On-ear con cable USB-C, Hi-Res Audio, negro."
+  },
+  {
+    "id": 14,
+    "name": "UPS APC Easy UPS BV1000",
+    "category": "Energía",
+    "price": 3099,
+    "stock": 8,
+    "image": "imagenes/UPS_APC_Easy.png",
+    "description": "1000 VA / 600 W, 120 V, regulación AVR."
+  },
+  {
+    "id": 15,
+    "name": "Router MikroTik hEX RB750Gr3",
+    "category": "Redes",
+    "price": 2299,
+    "stock": 10,
+    "image": "imagenes/Router_MikroTik_hEX.png",
+    "description": "5 puertos Gigabit, doble núcleo 880 MHz, USB y microSD."
+  },
+  {
+    "id": 16,
+    "name": "Adaptador Dell DA305",
+    "category": "Accesorios",
+    "price": 3199,
+    "stock": 10,
+    "image": "imagenes/Adaptador_Dell_DA305.png",
+    "description": "Adaptador multipuerto USB-C, 6 en 1."
+  }
+]

@@ -1,0 +1,9 @@
+TIENDANOVA - DEPARTAMENTOS CORREGIDOS
+
+1. Extrae todo el ZIP.
+2. Abre index.html.
+3. Haz clic en Envíos o en Elegir departamento y consultar envío.
+4. El desplegable contiene los 18 departamentos directamente en el HTML.
+5. Agrega productos, abre carrito, selecciona departamento y municipio.
+Tarifas simuladas para uso académico; no son tarifas comerciales reales.
+\nWHATSAPP (revisado): Los botones abren WhatsApp en la misma pestaña para evitar bloqueadores de ventanas emergentes. Sin número de empresa, WhatsApp solicita elegir el destinatario. Para dirigir los pedidos al negocio, edita app.js y configura TIENDANOVA_WHATSAPP_NUMBER con un número empresarial autorizado en formato 504XXXXXXXX. No se ha configurado ningún número personal.\n
