@@ -51,12 +51,13 @@ if(previewDept){
 // Con número configurado abre el chat directo; sin número usa la pantalla de compartir.
 const TIENDANOVA_WHATSAPP_NUMBER = '50432283197'; // Configurar únicamente un número comercial autorizado: 504XXXXXXXX
 function openTiendaNovaWhatsApp(message) {
-  const number = TIENDANOVA_WHATSAPP_NUMBER.replace(/\D/g, '');
-  const base = number ? 'https://api.whatsapp.com/send?phone='+number+'&text='
-                      : 'https://api.whatsapp.com/send?text=';
-  // Navegación directa desde el clic: evita bloqueadores de ventanas emergentes.
-  window.location.href = base + encodeURIComponent(message);
+  const numero = TIENDANOVA_WHATSAPP_NUMBER.replace(/\D/g, '');
+  const enlace = 'https://wa.me/' + numero +
+    '?text=' + encodeURIComponent(message);
+
+  window.location.assign(enlace);
 }
+
 document.getElementById('checkout').disabled = false;
 document.getElementById('checkout').onclick = function () {
   const pedido = deliveryTotals();
